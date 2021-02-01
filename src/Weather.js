@@ -1,20 +1,26 @@
 
-import React from "react";
+import React,{useState} from "react";
 import "./Weather.css";
+import axios from "axios";
 import FormattedData from "./FormattedData";
 
 export default function Weather() {
-  let weatherData = {
-    city: "Seattle",
-    date: new Date(response.data.dt * 1000),
-    description: "Cloudy",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
-    temperature: 32,
-    humidity: 8,
-    wind: 15
-  };
+  const [weatherdata, setWeatherData] = useState ({ ready: false }) ;
 
-  return (
+  function handleResponse(response) {
+    console.log(response.data);
+    setWeatherData({
+      ready:true,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      date: "wednesday 07:00",
+      description:response.data.weather[0].description,
+      imgUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
+      wind:response.data.wind.speed,
+      city:response.data.name,
+    });
+    if(weatherData.ready){
+     return (
     <div className="App">
       <div className="Weather">
         <form className="mt-2 mb-3">
@@ -42,8 +48,7 @@ export default function Weather() {
           <ul>
             <li>
               <i>
-                <FormattedDate date= {weatherData.date}
-                 />
+                <FormattedDate date= {weatherData.date}/>
               </i>
             </li>
             <li>{weatherData.description}</li>
@@ -79,6 +84,15 @@ export default function Weather() {
         </div>
         <div className="row"></div>
       </div>
+      );
+      } else {
+        const apiKey ="0e7fda8f04980882d2b3cbcbbbb1c0e4";
+        let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+        axios.get(apiURL).then(handleResponse);
+        return"Loading...";
+      }
+      
+    
       <small>
         <p>
           {" "}
@@ -89,5 +103,5 @@ export default function Weather() {
         </p>
       </small>
     </div>
-  );
-}
+  ); }
+
