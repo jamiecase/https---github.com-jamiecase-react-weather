@@ -16,7 +16,18 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+ <App deafaultCity="Seattle" />
+
+    <small>
+        <p>
+          {" "}
+          <a href="https://github.com/jamiecase/https---github.com-jamiecase-react-weather">
+            open-source code
+          </a>{" "}
+          by Jamie Case
+        </p>
+      </small>
   </React.StrictMode>,
+
   rootElement
 );

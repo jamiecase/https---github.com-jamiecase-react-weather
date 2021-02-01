@@ -85,7 +85,7 @@ export default function Weather() {
         <div className="row"></div>
       </div>
       );
-      } else {
+       } else {
         const apiKey ="0e7fda8f04980882d2b3cbcbbbb1c0e4";
         let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
         axios.get(apiURL).then(handleResponse);
@@ -93,15 +93,7 @@ export default function Weather() {
       }
       
     
-      <small>
-        <p>
-          {" "}
-          <a href="https://github.com/jamiecase/https---github.com-jamiecase-react-weather">
-            open-source code
-          </a>{" "}
-          by Jamie Case
-        </p>
-      </small>
+      
     </div>
-  ); }
+  ); } 
 
