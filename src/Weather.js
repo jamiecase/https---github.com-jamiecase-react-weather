@@ -46,7 +46,7 @@ export default function Weather() {
             <ul>
               <li>
                 <i>
-                  <FormattedDate date={weatherData.date} />
+                  <FormattedData date={weatherData.date} />
                 </i>
               </li>
               <li>{weatherData.description}</li>
