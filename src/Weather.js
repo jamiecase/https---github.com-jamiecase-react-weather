@@ -27,7 +27,7 @@ function search() {
 
   function handleSubmit(event) {
    event.preventDefault();
-   alert();
+  
   }
 
 function handleCityChange(event){
