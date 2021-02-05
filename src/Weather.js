@@ -47,8 +47,8 @@ setCity(event.target.value);
                   type="search"
                   placeholder="Type a city name"
                   className="form-control"
-                  autofocus="on"
-                  autocomplete="off"
+                  autoFocus="on"
+                  autoComplete="off"
                 />
               </div>
               <div className="col-3">
