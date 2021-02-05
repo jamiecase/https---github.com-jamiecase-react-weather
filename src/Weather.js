@@ -49,6 +49,7 @@ setCity(event.target.value);
                   className="form-control"
                   autoFocus="on"
                   autoComplete="off"
+                  onChange={handleCityChange}
                 />
               </div>
               <div className="col-3">
@@ -56,7 +57,7 @@ setCity(event.target.value);
                   type="submit"
                   value="Search"
                   className="btn btn-outline-secondary w-100"
-                  onChange={handleCityChange}
+                 
                 />
               </div>
             </div>
