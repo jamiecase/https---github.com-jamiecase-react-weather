@@ -25,10 +25,11 @@ function search() {
   axios.get(apiUrl).then(handleResponse);
 }
 
-  function handleSubmit(event) {
-   event.preventDefault();
-  
+   function handleSubmit(event) {
+    event.preventDefault();
+    search();  
   }
+  
 
 function handleCityChange(event){
 setCity(event.target.value);
