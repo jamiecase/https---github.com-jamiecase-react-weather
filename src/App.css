@@ -48,7 +48,7 @@ p {
   text-align: center;
   margin-bottom: 10px;
 }
-.weather-icon {
+.weather canvas {
   max-width: 70px;
   margin: 0 auto;
   display: block;
