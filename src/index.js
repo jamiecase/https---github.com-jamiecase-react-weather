@@ -21,8 +21,18 @@ ReactDOM.render(
           open-source code
         </a>{" "}
         by Jamie Case
+
+        and{" "}
+          <a
+            href="https://condescending-sinoussi-3371b9.netlify.app"
+            target="_blank"
+          >
+            hosted on Netlify
+          </a>
+
       </p>
     </small>
+    
   </React.StrictMode>,
   rootElement
 );

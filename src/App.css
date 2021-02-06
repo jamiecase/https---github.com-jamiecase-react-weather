@@ -2,7 +2,7 @@
   border: 1px solid;
   border-radius: 15px;
   margin: 30px auto;
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
   background-image: white;
 }
@@ -21,7 +21,7 @@ ul {
   padding: 0;
 }
 li {
-  color: rgb(135, 135, 135, 135);
+  color: white;
   font-size: 18px;
   font-weight: 100;
   height: 20px;
@@ -39,7 +39,7 @@ footer {
 
 .units {
   text-align: center;
-  color: white;
+  color: rgb(19, 18, 18);
 }
 p {
   text-align: center;
@@ -49,11 +49,12 @@ p {
   margin-bottom: 10px;
 }
 .weather canvas {
-  max-width: 70px;
+  max-width: 90px;
   margin: 0 auto;
   display: block;
   position: relative;
-  top: -25px;
+  top: -15px;
+  color:white;
 }
 .search-form {
   display: inline-block;
@@ -68,7 +69,7 @@ p {
 .button {
   border-radius: 7px;
   padding: 7px;
-  background-color: #b9c7e0;
+  background-color:#f1f4f8;
   color: white;
   font-weight: bold;
 }
@@ -81,19 +82,19 @@ p .active:hover {
 }
 
 .humidity {
-  color: white;
+  color: rgb(17, 16, 16);
   margin-top: 0;
   position: relative;
   top: -36px;
 }
 .windspeed {
-  color: white;
+  color: rgb(12, 11, 11);
   position: relative;
   top: -25px;
 }
 .date {
-  color: white;
+  color: rgb(10, 10, 10);
 }
 .description {
-  color: white;
+  color: rgb(12, 11, 11);
 }
