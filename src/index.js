@@ -26,6 +26,7 @@ ReactDOM.render(
           <a
             href="https://condescending-sinoussi-3371b9.netlify.app"
             target="_blank"
+            rel="noreferrer"
           >
             hosted on Netlify
           </a>
